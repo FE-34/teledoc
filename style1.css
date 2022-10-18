@@ -7,6 +7,7 @@
     font-family: 'Inter', sans-serif;
 }
 nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +29,11 @@ nav ul li a{
     color: #000;
     font-size: 0.9rem;
 }
-nav label{
+nav ul li a[href="login.html"]{
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 32px;
+    font-weight: 800;
 }
 nav img{
     width: 76px;
@@ -39,4 +44,155 @@ nav span[name='tele']{
 }
 nav span[name='doc']{
     color: #F03E85;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+header div{
+    position: relative;
+}
+header div img[alt="Male Doctor"]{
+    width: 464px;
+    height: 376px;
+    margin: 0 60px;
+}
+#header-no-1{
+    width: 488px;
+    height: 376px;
+    background-image: url(Ellipse-15.svg);
+    background-size: 576px 384px;
+    background-repeat: no-repeat;
+    background-position: -60px 50px;
+}
+#header-no-2{
+    margin-right: 60px;
+    text-align: right;
+}
+header p, header h1{
+    letter-spacing: 0.03em;
+    margin: 12px 0;
+}
+#header-p-1{
+    color: #6599E8;
+    font-size: 0.8rem;
+}
+#header-p-2{
+    font-size: 1rem;
+}
+header a, nav ul li a[href="login.html"]{
+    background: #6599E8;
+}
+header a{
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+#about-us{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+#about-us p{
+    font-size: 1.25rem;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+}
+#about-us img{
+    width: 480px;
+    height: 388px;
+    margin: 0 60px;
+    margin-bottom: 0;
+}
+#about-us-no-1{
+    margin: 0 60px;
+    width: 40%;
+}
+#about-us-no-2{
+    width: 60%;
+    height: 388px;
+    background-image: url(Ellipse-16.svg);
+    background-size: 641px 484px;
+    background-repeat: no-repeat;
+    background-position: 60px 180px;
+}
+footer{
+    display: flex;
+    margin-top: 120px;
+}
+#footer-no-1{
+    margin-left: 60px;
+    width: 50%;
+}
+#footer-no-1 table{
+    margin-top: 52px;
+}
+#footer-no-2{
+    width: 50%;
+    margin-right: 60px;
+}
+#footer-no-2 form{
+    margin-top: 52px;
+    width: 100%;
+    padding: 4px 0;
+}
+#footer-no-2 form label{
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+}
+#footer-no-2 form input{
+    width: 95%;
+    height: 32px;
+    border: transparent;
+    font-size: 1rem;
+}
+#footer-no-2 form textarea{
+    width: 95%;
+    height: 200px;
+    border: transparent;
+    font-size: 1rem;
+}
+#footer-no-2 form button{
+    width: 139px;
+    height: 37px;
+    background-color: #6599E8;
+    color: #fff;
+    font-size: 1.25rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+#footer-no-2 form label, #footer-no-2 form input, #footer-no-2 form textarea, #footer-no-2 form button{
+    margin: 8px 0;
+}
+.contact-i{
+    padding: 12px 0;
+    text-align: center;
+}
+.contact-p{
+    padding: 0 24px;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+}
+.input-wrapper{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    border: solid thin;
+    border-radius: 5px;
+}
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 32px 60px 0 60px;
+    border-top: solid thin;
+    letter-spacing: 0.03em;
 }
