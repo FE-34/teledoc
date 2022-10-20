@@ -2,11 +2,90 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    text-decoration: none;
     list-style: none;
     font-family: 'Inter', sans-serif;
 }
+
+/* Nav */
 nav{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid thin #E1E1E1;
+}
+.nav-content{
+    width: 45%;
+    align-self: center;
+}
+nav img{
+    width: 76px;
+    height: 90px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.right label{
+    float: right;
+    cursor: pointer;
+}
+.right label i{
+    color: #F03E85;
+}
+.right div{
+    display: none;
+    background: transparent;
+    border: none;
+}
+nav ul{
+    float: right;
+    margin: auto 0;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+nav ul li a[href="login.html"]{ 
+    padding: 12px 32px;
+}
+nav ul li a[href="login.html"], .row a[href="login.html"]{
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: #6599E8;
+}
+nav span{
+    font-weight: 800;
+}
+nav span[name='tele']{
+    color: #6599E8;
+}
+nav span[name='doc']{
+    color: #F03E85;
+}
+nav label i{
+    font-size: 2rem;
+}
+.container{
+    display: none;
+}
+div.row{
+    width: 101%;
+}
+.row a[href="index.html"]{
+    padding-right: 91%;
+}
+.row a[href="#about-us"]{
+    padding-right: 85%;
+}
+.row a[href="login.html"]{
+    padding: 12px 38vw;
+}
+
+/* nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -17,35 +96,121 @@ nav{
 nav div{
     display: flex;
     align-items: center;
+    margin-left: 5%;
 }
-nav div, nav ul{
-    margin: 0 60px;
+nav ul{
+    margin-right: 5%;
 }
 nav ul li{
     display: inline-block;
-    margin: 24px;
 }
 nav ul li a{
     color: #000;
     font-size: 0.9rem;
-}
-nav ul li a[href="login.html"]{
-    color: #fff;
-    border-radius: 10px;
-    padding: 12px 32px;
-    font-weight: 800;
-}
-nav img{
-    width: 76px;
-    height: 90px;
+    text-decoration: none;
 }
 nav span[name='tele']{
     color: #6599E8;
 }
 nav span[name='doc']{
     color: #F03E85;
-}
+} */
+
+/* Header */
 header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(Ellipse-15.svg);
+    background-repeat: no-repeat;
+    background-size: 50vw 100vh;
+    background-position: -10px 50px;
+    margin-top: 120px;
+}
+header>div{
+    width: 45%;
+}
+header img{
+    width: inherit;
+    height: 70vh;
+}
+#header-left, #header-right{
+    display: flex;
+}
+#header-left{
+    justify-content: center;
+}
+#header-right{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+#header-right div{
+    margin: 12px 0;
+}
+#header-right p[name="find-doctor"]{
+    color: #6599E8;
+    font-size: 1rem;
+}
+#header-right p[name="recommendation"]{
+    font-size: 1.25rem;
+}
+header div a{
+    text-decoration: none;
+    background-color: #6599E8;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+/* About Us */
+#about-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 120px;
+    background-image: url(Ellipse-16.svg);
+    background-repeat: no-repeat;
+    background-size: 1017px 536px;
+    background-position: 500px 350px;
+}
+#about-us>div{
+    width: 45%;
+    display: flex;
+}
+#about-us-left{
+    flex-direction: column;
+}
+#about-us-right{
+    justify-content: center;
+    align-items: flex-end;
+}
+#about-us div[name="about-us-content"]{
+    margin-top: 32px;
+}
+#about-us img{
+    width: 600px;
+    height: 600px;
+}
+#about-us p{
+    font-size: 1.75rem;
+}
+
+/* #header-no-1{
+    background-image: url(Ellipse-15.svg);
+    background-repeat: no-repeat;
+    background-size: 50vw 100vh;
+    background-position: -60px 50px;
+}
+#header-no-1 img{
+    width: 70vw;
+    height: 70vh;
+} */
+/* header{
+    width: 100%;
     display: flex;
     align-items: center;
     margin-top: 40px;
@@ -118,21 +283,32 @@ header a{
     background-size: 641px 484px;
     background-repeat: no-repeat;
     background-position: 60px 180px;
-}
+} */
+
+/* Footer */
 footer{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 120px;
 }
-#footer-no-1{
-    margin-left: 60px;
-    width: 50%;
+footer i{
+    font-size: 2rem;
+}
+#footer-no-1, #footer-no-2{
+    width: 45%;
 }
 #footer-no-1 table{
     margin-top: 52px;
 }
-#footer-no-2{
-    width: 50%;
-    margin-right: 60px;
+.contact-i{
+    padding: 12px 0;
+    text-align: center;
+}
+.contact-p{
+    padding: 0 24px;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
 }
 #footer-no-2 form{
     margin-top: 52px;
@@ -171,15 +347,6 @@ footer{
 #footer-no-2 form label, #footer-no-2 form input, #footer-no-2 form textarea, #footer-no-2 form button{
     margin: 8px 0;
 }
-.contact-i{
-    padding: 12px 0;
-    text-align: center;
-}
-.contact-p{
-    padding: 0 24px;
-    font-size: 1rem;
-    letter-spacing: 0.03em;
-}
 .input-wrapper{
     display: flex;
     justify-content: center;
@@ -187,6 +354,14 @@ footer{
     border: solid thin;
     border-radius: 5px;
 }
+/* footer{
+    display: flex;
+    margin-top: 120px;
+}
+#footer-no-1{
+    margin-left: 60px;
+    width: 50%;
+}*/
 #copyright{
     display: flex;
     justify-content: center;
@@ -195,4 +370,201 @@ footer{
     margin: 32px 60px 0 60px;
     border-top: solid thin;
     letter-spacing: 0.03em;
+}
+#check-1{
+    display: none;
+}
+/* #check-1:checked~.container{
+    display: unset;
+} */
+@media screen and (max-width: 1612px) {
+    #footer-no-2 form{
+        margin-top: 24px;
+    }
+    #check-1:checked~.container{
+        display: none;
+    }
+}
+@media screen and (max-width: 926px) {
+    #footer-no-1, #footer-no-2{
+        width: 90%;
+    }
+    .right ul{
+        display: none;
+    }
+    .right div{
+        display: unset;
+    }
+    #check-1:checked~.container{
+        display: unset;
+    }
+}
+@media screen and (max-width: 1200px) {
+    header{
+        background-size: 50vw 100vh;
+        background-position: 0px 30px;
+    }
+    header img{
+        height: 65vh;
+    }
+    #header-right h1{
+        font-size: 2rem;
+    }
+    #about-us{
+        background-position: 300px 250px;
+    }
+    #about-us img{
+        width: 500px;
+        height: 500px;
+    }
+    #about-us p{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 992px){
+    header{
+        align-items: center;
+        flex-direction: column-reverse;
+        background-size: 0vw 0vh;
+        background-position: 0px 0px;
+    }
+    header>div{
+        width: 90%;
+    }
+    header img{
+        height: 320px;
+    }
+    #header-right{
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        background-size: 100vw 90vh;
+        background-position: -100px 240px;
+    }
+    header img{
+        height: 280px;
+    }
+    #header-right h1{
+        font-size: 2.25rem;
+    }
+    #header-right p[name="find-doctor"]{
+        font-size: 0.75rem;
+    }
+    #header-right p[name="recommendation"]{
+        font-size: 1rem;
+    }
+    .row a[href="#about-us"]{
+        padding-right: 83%;
+    }
+    #about-us{
+        background-position: 50px 350px;
+    }
+    #about-us>div{
+        width: 90%;
+    }
+    #about-us p{
+        text-align: justify;
+    }
+    #about-us img{
+        width: 400px;
+        height: 400px;
+    }
+    #footer-no-2{
+        margin-top: 52px;
+    }
+}
+@media screen and (max-width: 576px){
+    nav img{
+        width: 56px;
+        height: 70px;
+    }
+    nav span{
+        font-size: 1rem;
+    }
+    nav label i{
+        font-size: 1rem;
+    }
+    header{
+        background-size: 90vw 90vh;
+        background-position: 0px 230px;
+    }
+    header img{
+        height: 240px;
+    }
+    header div a{
+        font-size: 0.75rem;
+        padding: 8px 24px;
+    }
+    #header-right h1{
+        font-size: 1.5rem;
+    }
+    #header-right p[name="find-doctor"]{
+        font-size: 0.75rem;
+    }
+    #header-right p[name="recommendation"]{
+        font-size: 0.75rem;
+    }
+    #copyright{
+        font-size: 0.5rem;
+    }
+    .row a[href="#about-us"]{
+        padding-right: 69%;
+    }
+    .row a[href="login.html"]{
+        padding: 12px 32vw;
+    }
+    #about-us{
+        background-position: -30px 250px;
+    }
+    #about-us p{
+        font-size: 1rem;
+    }
+    #about-us img{
+        width: 300px;
+        height: 300px;
+    }
+    footer i{
+        font-size: 1.5rem;
+    }
+    .contact-p{
+        font-size: 0.9rem;
+    }
+    #footer-no-2 form button{
+        width: 109px;
+        height: 37px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .row a[href="#about-us"]{
+        padding-right: 64%;
+    }
+}
+@media screen and (max-width: 320px){
+    header{
+        background-size: 95vw 90vh;
+        background-position: 0px 200px;
+    }
+    header img{
+        height: 200px;
+    }
+    #header-right h1{
+        font-size: 1.25rem;
+    }
+    .row a[href="#about-us"]{
+        padding-right: 57%;
+    }
+    #about-us{
+        background-position: -50px 180px;
+    }
+    #about-us p{
+        font-size: 0.75rem;
+    }
+    #about-us img{
+        width: 240px;
+        height: 240px;
+    }
 }
