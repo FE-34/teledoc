@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid thin #E1E1E1;
+}
+.nav-content{
+    width: 45%;
+    align-self: center;
+}
+nav img{
+    width: 76px;
+    height: 90px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.right label{
+    float: right;
+    cursor: pointer;
+}
+.right label i{
+    color: #F03E85;
+}
+.right div{
+    display: none;
+    background: transparent;
+    border: none;
+}
+nav ul{
+    float: right;
+    margin: auto 0;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+nav ul li a[href="login.html"]{ 
+    padding: 12px 32px;
+}
+nav ul li a[href="login.html"], .row a[href="login.html"]{
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: #6599E8;
+}
+nav span{
+    font-weight: 800;
+}
+span[name='tele']{
+    color: #6599E8;
+}
+span[name='doc']{
+    color: #F03E85;
+}
+nav label i{
+    font-size: 2rem;
+}
+.container{
+    display: none;
+}
+div.row{
+    width: 101%;
+}
+.row a[href="index.html"]{
+    padding-right: 91%;
+}
+.row a[href="#about-us"]{
+    padding-right: 85%;
+}
+.row a[href="login.html"]{
+    padding: 12px 38vw;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+header p{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Main */
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+main>div{
+    width: 50%;
+}
+main>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main>div>div p{
+    margin-top: 12px;
+}
+main h5{
+    font-weight: 600;
+}
+main form{
+    width: 100%;
+}
+main label{
+    color: #5480C1;
+}
+main input[type="text"], main input[type="email"], main input[type="password"]{
+    height: 32px;
+    font-size: 1rem;
+    border: transparent;
+}
+main button{
+    width: 100%;
+    height: 44px;
+    background: #6599E8;
+    border: transparent;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 36px;
+}
+main a{
+    text-decoration: none;
+}
+.form-box{
+    margin-top: 16px;
+}
+.input-form{
+    width: 95%;
+}
+.input-form-nama{
+    width: 90%;
+}
+#nama-depan-belakang{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#nama-depan-belakang div{
+    width: 47%;
+}
+#nama-depan-belakang div[name="for-nama-depan"], #nama-depan-belakang div[name="for-nama-belakang"]{
+    width: 100%;
+}
+.input-wrapper{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    border: solid thin #6599E8;
+    border-radius: 5px;
+}
+
+#check-1{
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1612px) {
+    #check-1:checked~.container{
+        display: none;
+    }
+}
+@media screen and (max-width: 926px) {
+    .right ul{
+        display: none;
+    }
+    .right div{
+        display: unset;
+    }
+    #check-1:checked~.container{
+        display: unset;
+    }
+}
+@media screen and (max-width: 768px){
+    .row a[href="#about-us"]{
+        padding-right: 83%;
+    }
+}
+@media screen and (max-width: 576px){
+    nav img{
+        width: 56px;
+        height: 70px;
+    }
+    nav span{
+        font-size: 1rem;
+    }
+    nav label i{
+        font-size: 1rem;
+    }
+    .row a[href="#about-us"]{
+        padding-right: 69%;
+    }
+    .row a[href="login.html"]{
+        padding: 12px 32vw;
+    }
+    header p{
+        font-size: 1.25rem;
+    }
+    main>div{
+        width: 70%;
+    }
+    main h5{
+        font-size: 0.9rem;
+    }
+    main label{
+        font-size: 0.7rem;
+    }
+    main input[type="text"], main input[type="email"], main input[type="password"]{
+        height: 28px;
+        font-size: 0.7rem;
+    }
+    main>div>div p{
+        font-size: 0.7rem;
+    }
+    main button{
+        height: 36px;
+        margin-top: 24px;
+    }
+    #nama-depan-belakang div{
+        width: 100%;
+    }
+    #nama-belakang{
+        margin-top: 8px;
+    }
+    .form-box{
+        margin-top: 8px;
+    }
+    .form-box span{
+        font-size: 0.7rem;
+    }
+    .input-form-nama{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 375px){
+    .row a[href="#about-us"]{
+        padding-right: 64%;
+    }
+}
+@media screen and (max-width: 320px){
+    .row a[href="#about-us"]{
+        padding-right: 57%;
+    }
+    header p{
+        font-size: 1rem;
+    }
+    main h5{
+        font-size: 0.8rem;
+    }
+    main>div>div p{
+        font-size: 0.6rem;
+    }
+    .form-box span{
+        font-size: 0.6rem;
+    }
+}
