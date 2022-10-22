@@ -101,6 +101,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    padding-bottom: 60px;
 }
 main>div{
     width: 50%;

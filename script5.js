@@ -19,7 +19,6 @@ form.addEventListener('submit', function(event){
                     Email: email.value,
                     Password: password.value
                 })
-                console.log(dataUser);
 
                 let dataUserString = JSON.stringify(dataUser);
                 localStorage.setItem('dataUserKey', dataUserString);
