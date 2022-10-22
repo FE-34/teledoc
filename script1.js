@@ -3,6 +3,12 @@ const namaLengkap = document.getElementById('nama-lengkap')
 const email = document.getElementById('email')
 const keluhan = document.getElementById('keluhan')
 const dataKeluhan = []
+const dataLogin = JSON.parse(localStorage.getItem('dataLoginKey') || [])
+const namaDepan = document.getElementById('nama-depan')
+const fullName = document.getElementById('fullname')
+
+namaDepan.innerHTML = dataLogin[0]["Nama Depan"]
+fullName.innerHTML = dataLogin[0]["Nama Depan"] + " " + dataLogin[0]["Nama Belakang"]
 
 form.addEventListener("submit", function(event){
     event.preventDefault()

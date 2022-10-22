@@ -58,7 +58,14 @@ nav ul li a[href="login.html"], .row a[href="login.html"]{
     font-weight: 800;
     background-color: #6599E8;
 }
-nav span{
+nav ul li img{
+    width: 50px;
+    height: 50px;
+}
+nav ul li img, .container img{
+    margin-right: 8px;
+}
+nav span, .container span{
     font-weight: 800;
 }
 nav span[name='tele']{
@@ -72,6 +79,10 @@ nav label i{
 }
 .container{
     display: none;
+}
+.container img{
+    width: 70px;
+    height: 70px;
 }
 div.row{
     width: 101%;
@@ -265,7 +276,25 @@ a[href="login.html"]:hover, header div a:hover, #footer-no-2 form button:hover{
 }
 
 /* Responsive */
+@media screen and (max-width: 2560px) {
+    #about-us{
+        background-position: 1100px 300px;
+        background-size: 1517px 1036px;
+    }
+    #about-us img{
+        width: 800px;
+        height: 800px;
+    }
+}
 @media screen and (max-width: 1612px) {
+    #about-us{
+        background-size: 1017px 536px;
+        background-position: 500px 250px;
+    }
+    #about-us img{
+        width: 500px;
+        height: 500px;
+    }
     #footer-no-2 form{
         margin-top: 24px;
     }
@@ -300,10 +329,6 @@ a[href="login.html"]:hover, header div a:hover, #footer-no-2 form button:hover{
     }
     #about-us{
         background-position: 300px 250px;
-    }
-    #about-us img{
-        width: 500px;
-        height: 500px;
     }
     #about-us p{
         font-size: 1.25rem;
@@ -374,6 +399,10 @@ a[href="login.html"]:hover, header div a:hover, #footer-no-2 form button:hover{
     }
     nav label i{
         font-size: 1rem;
+    }
+    .container img{
+        width: 50px;
+        height: 50px;
     }
     header{
         background-size: 90vw 90vh;
