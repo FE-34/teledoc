@@ -45,7 +45,7 @@ button.addEventListener('submit', function(evt){
                     "remember" : true
                 })
                 let dataLogString = JSON.stringify(dataLog);
-                localStorage.setItem('dataUserKey', dataLogString);
+                localStorage.setItem('dataLoginKey', dataLogString);
                 
                 window.location.href = "beranda.html";
                 
@@ -59,7 +59,7 @@ button.addEventListener('submit', function(evt){
                     "remember" : false
                 })
                 let dataLogString = JSON.stringify(dataLog);
-                localStorage.setItem('dataUserKey', dataLogString);
+                localStorage.setItem('dataLoginKey', dataLogString);
                 
                 window.location.href = "beranda.html";
                 break
