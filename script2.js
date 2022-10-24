@@ -2,9 +2,15 @@ const listCardTemplate = document.querySelector("[list-dokter-template]")
 const listCardContainer = document.querySelector("[list-dokter-container]")
 const searchInput = document.querySelector("[data-search]")
 const keyID = document.getElementById("card")
+const dataLogin = JSON.parse(localStorage.getItem('dataLoginKey') || [])
+const namaDepan = document.getElementById('nama-depan')
+const fullName = document.getElementById('fullname')
 let it = 0;
 
 let lists = []
+
+namaDepan.innerHTML = dataLogin[0]["Nama Depan"]
+fullName.innerHTML = dataLogin[0]["Nama Depan"] + " " + dataLogin[0]["Nama Belakang"]
 
 searchInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase()

@@ -57,7 +57,14 @@ nav ul li a[href="login.html"], .row a[href="login.html"]{
     font-weight: 800;
     background-color: #6599E8;
 }
-nav span{
+nav ul li img{
+    width: 50px;
+    height: 50px;
+}
+nav ul li img, .container img{
+    margin-right: 8px;
+}
+nav span, .container span{
     font-weight: 800;
 }
 nav span[name='tele']{
@@ -135,5 +142,11 @@ p {
     }
     #check-1:checked~.container{
         display: unset;
+    }
+}
+@media screen and (max-width: 576px){
+    .container img{
+        width: 50px;
+        height: 50px;
     }
 }
