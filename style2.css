@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid thin #E1E1E1;
+}
+.nav-content{
+    width: 45%;
+    align-self: center;
+}
+nav img{
+    width: 76px;
+    height: 90px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.right label{
+    float: right;
+    cursor: pointer;
+}
+.right label i{
+    color: #F03E85;
+}
+.right div{
+    display: none;
+    background: transparent;
+    border: none;
+}
+nav ul{
+    float: right;
+    margin: auto 0;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+nav ul li a[href="login.html"]{ 
+    padding: 12px 32px;
+}
+nav ul li a[href="login.html"], .row a[href="login.html"]{
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: #6599E8;
+}
+nav ul li img{
+    width: 50px;
+    height: 50px;
+}
+nav ul li img, .container img{
+    margin-right: 8px;
+}
+nav span, .container span{
+    font-weight: 800;
+}
+nav span[name='tele']{
+    color: #6599E8;
+}
+nav span[name='doc']{
+    color: #F03E85;
+}
+nav label i{
+    font-size: 2rem;
+}
+
+.container{
+    display: none;
+}
+div.row{
+    width: 101%;
+}
+.row a[href="index.html"]{
+    padding-right: 91%;
+}
+.row a[href="#about-us"]{
+    padding-right: 85%;
+}
+.row a[href="login.html"]{
+    padding: 12px 38vw;
+}
+
+#check-1{
+    display: none;
+}
+
+.container-fluid {
+    padding-left: 20px;
+    margin-top: 3px;
+}
+
+h1 {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.card {
+    margin-left: 50px;
+}
+
+.next{
+    text-decoration: none;
+    display: flex;
+}
+
+@media screen and (max-width: 1612px) {
+    #check-1:checked~.container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 926px) {
+    .right ul{
+        display: none;
+    }
+    .right div{
+        display: unset;
+    }
+    #check-1:checked~.container{
+        display: unset;
+    }
+}
+@media screen and (max-width: 576px){
+    .container img{
+        width: 50px;
+        height: 50px;
+    }
+}

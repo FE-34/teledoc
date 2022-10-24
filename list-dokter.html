@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleDoc - Konsultasi Dengan Dokter Terpercaya</title>
+
+    <script src="https://kit.fontawesome.com/738e2827c9.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+  <input id="check-1" type="checkbox">
+  <nav class="nav">
+      <div class="nav-content left">
+          <label><img src="TeleDoc-logo.svg" alt="teledoc"></label>
+          <h3><span name="tele">Tele</span><span name="doc">Doc</span></h3>
+      </div>
+      <div class="nav-content right">
+          <ul>
+              <li class="me-5"><a href="index.html">Beranda</a></li>
+              <li class="me-5"><a href="#about-us">Tentang Kami</a></li>
+              <li>
+                  <img src="man 2.svg" alt="">
+                  <span id="nama-depan">Nama</span>
+              </li>
+          </ul>
+          <label for="check-1">
+              <div>
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+          </label>
+      </div>
+  </nav>
+  
+  <div class="container">
+      <div class="row my-3">
+          <div class="col col-10 mx-auto border-bottom py-1">
+              <a class="text-decoration-none text-body" href="index.html">Beranda</a>
+          </div>
+      </div>
+      <div class="row my-3">
+          <div class="col col-10 mx-auto border-bottom py-1">
+              <a class="text-decoration-none text-body" href="#about-us">Tentang Kami</a>
+          </div>
+      </div>
+      <div class="row text-center my-5">
+          <div class="col col-10 mx-auto" name="Login">
+              <img src="man 2.svg" alt="">
+              <span id="fullname">Nama Lengkap</span>
+          </div>
+      </div>
+  </div>
+    
+    <nav class="navbar bg-light">
+        <form class="container-fluid">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">Cari</span>
+            <input class="form-control me-2" type="search" id="search" data-search>
+          </div>
+        </form>
+      </nav>
+
+        <h1>Rekomendasi Dokter</h1>
+        <p>Konsultasi online bersama dokter siaga</p>
+
+    <div class="list-card" list-dokter-container></div>
+      <template list-dokter-template>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div id="gambar"></div>
+                <img class="img" data-img>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="title" data-title></h5>
+                  <p class="text" data-text></p>
+                  <p class="cardText" data-cardText></p>
+                  <div id="card">
+                  <a href="chat.html" class="next">Chat</a>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-primary me-md-2" type="button">Button</button>
+        </div>
+      </template>
+
+  
+</body>
+</html>
